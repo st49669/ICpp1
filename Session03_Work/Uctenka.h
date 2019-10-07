@@ -10,15 +10,13 @@ private:
 	double castka;
 	double dph;
 public:
-	Uctenka();
-	~Uctenka();
-	void setCislo(int);
-	void setCastka(double);
-	void setDph(double);
+	void SetCisloUctenky(int cisloUcctenky);
+	void SetCastka(double castka);
+	void SetDph(double dph);
 
-	double getDph();
-	int getCislo();
-	double getCastka();
+	double GetDph();
+	int GetCisloUctenky();
+	double GetCastka();
 };
 
 
