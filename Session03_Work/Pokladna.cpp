@@ -2,7 +2,7 @@
 #include "Pokladna.h"
 
 
-int Pokladna::citacId = 1000;
+int Pokladna::citacId = 500;
 
 Pokladna::Pokladna()
 {
@@ -19,22 +19,24 @@ Pokladna::~Pokladna()
 
 Uctenka & Pokladna::vystavUctenku(double castka, double dph)
 {
-	uc[pocetVydanychUctenek].setCastka(castka);
-	uc[pocetVydanychUctenek].setCislo(citacId);
-	uc[pocetVydanychUctenek].setDph(dph);
-	pocetVydanychUctenek++;
-	citacId++;
-	return uc[pocetVydanychUctenek - 1];
+	if (pocetVydanychUctenek < 10) {
+		uc[pocetVydanychUctenek].SetCastka(castka);
+		uc[pocetVydanychUctenek].SetCisloUctenky(citacId);
+		uc[pocetVydanychUctenek].SetDph(dph);
+		pocetVydanychUctenek++;
+		citacId++;
+		return uc[pocetVydanychUctenek - 1];
+	}
+	
 }
 
 Uctenka & Pokladna::dejUctenku(int id)
 {
 	for (int i = 0; i < pocetVydanychUctenek; i++) {
-		if (uc[i].getCislo() == id) {
+		if (uc[i].GetCisloUctenky() == id) {
 			return uc[i];
 		}
 	}
-	return uc[0];
 }
 
 
@@ -42,7 +44,7 @@ double Pokladna::dejCastku() const
 {
 	double castka = 0;
 	for (int i = 0; i < pocetVydanychUctenek; i++) {
-		castka += uc[i].getCastka();
+		castka += uc[i].GetCastka();
 	}
 	return castka;
 }
@@ -51,7 +53,7 @@ double Pokladna::dejCastkuVcDph() const
 {
 	double castka = 0;
 	for (int i = 0; i < pocetVydanychUctenek; i++) {
-		castka += uc[i].getCastka() * (1 + (uc[i].getDph() / 100));
+		castka += uc[i].GetCastka() * (1 + (uc[i].GetDph() / 100));
 	}
 	return castka;
 }
