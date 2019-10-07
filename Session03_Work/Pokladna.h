@@ -11,8 +11,8 @@ private:
 public:
 	Pokladna();
 	~Pokladna();
-	Uctenka& vystavUctenku(double, double);
-	Uctenka& dejUctenku(int);
+	Uctenka& vystavUctenku(double castka, double dph);
+	Uctenka& dejUctenku(int cisloUctenky);
 	double dejCastku() const;
 	double dejCastkuVcDph() const;
 };
