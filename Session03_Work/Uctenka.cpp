@@ -2,33 +2,23 @@
 #include "Uctenka.h"
 
 
-Uctenka::Uctenka()
-{
-
-}
-
-
-Uctenka::~Uctenka()
-{
-}
-
-void Uctenka::setCislo(int cislo) {
+void Uctenka::SetCisloUctenky(int cislo) {
 	this->cisloUctenky = cislo;
 }
-void Uctenka::setCastka(double castka) {
+void Uctenka::SetCastka(double castka) {
 	this->castka = castka;
 }
-void Uctenka::setDph(double dph) {
+void Uctenka::SetDph(double dph) {
 	this->dph = dph;
 }
 
-double Uctenka::getDph() {
+double Uctenka::GetDph() {
 	return this->dph;
 }
-int Uctenka::getCislo() {
+int Uctenka::GetCisloUctenky() {
 	return this->cisloUctenky;
 }
-double Uctenka::getCastka() {
+double Uctenka::GetCastka() {
 	return this->castka;
 }
 
