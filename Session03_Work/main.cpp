@@ -11,8 +11,8 @@ using namespace std;
 
 int main()
 {
-	Pokladna * pokl = nullptr;
-	pokl = new Pokladna;
+	Pokladna* pokl = new Pokladna;
+	
 	pokl->vystavUctenku(12.05, 24);
 	pokl->vystavUctenku(31.99, 20);
 	pokl->vystavUctenku(109.99, 15);
@@ -34,9 +34,9 @@ int main()
 	cout << endl << "Celkova castka bez DPH: " << pokl->dejCastku() << endl;
 	cout << "Celkova castka s DPH: " << pokl->dejCastkuVcDph() << endl;
 
-
 	delete[] u;
 	delete pokl;
+	
 	system("pause");
     return 0;
 }
