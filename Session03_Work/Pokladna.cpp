@@ -19,26 +19,37 @@ Pokladna::~Pokladna()
 
 Uctenka & Pokladna::vystavUctenku(double castka, double dph)
 {
-	if (pocetVydanychUctenek < 10) {
-		uc[pocetVydanychUctenek].SetCastka(castka);
-		uc[pocetVydanychUctenek].SetCisloUctenky(citacId);
-		uc[pocetVydanychUctenek].SetDph(dph);
-		pocetVydanychUctenek++;
-		citacId++;
-		return uc[pocetVydanychUctenek - 1];
+	try {
+		if (pocetVydanychUctenek < 10) {
+			uc[pocetVydanychUctenek].SetCastka(castka);
+			uc[pocetVydanychUctenek].SetCisloUctenky(citacId);
+			uc[pocetVydanychUctenek].SetDph(dph);
+			pocetVydanychUctenek++;
+			citacId++;
+			return uc[pocetVydanychUctenek - 1];
+		}
+		throw pocetVydanychUctenek;
 	}
-	
+	catch (int pocetVydanychUctenek) {
+		std::cout << "Nelze vytvorit dalsi uctenku, pokladna je plna!" << std::endl;
+	}
+
 }
 
 Uctenka & Pokladna::dejUctenku(int id)
 {
-	for (int i = 0; i < pocetVydanychUctenek; i++) {
-		if (uc[i].GetCisloUctenky() == id) {
-			return uc[i];
+	try {
+		for (int i = 0; i < pocetVydanychUctenek; i++) {
+			if (uc[i].GetCisloUctenky() == id) {
+				return uc[i];
+			}
 		}
+		throw id;
+	}
+	catch (int id) {
+		std::cout << "Vyjimka - zadane cislo uctenky nenalezeno: " << id << "." <<std::endl;
 	}
 }
-
 
 double Pokladna::dejCastku() const
 {
