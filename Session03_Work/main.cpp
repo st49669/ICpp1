@@ -1,4 +1,4 @@
-// CV02_st49669_uctenky.cpp : Defines the entry point for the console application.
+// main.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
