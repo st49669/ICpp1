@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "Monstrum.h"
 
+#include <stdexcept>
+
 int Monstrum::GetHp() const
 {
 	return 0;
@@ -19,7 +21,14 @@ int Monstrum::GetMaxHP() const
 
 void Monstrum::SetMaxHP(int maxhp) 
 {
-	this->maxhp = maxhp;
+	if (maxhp <= 0) {
+		throw std::invalid_argument("Maximalni HP nemuze byt nizsi nez 0, nastavuji 100...");
+		this->maxhp = 100;
+	}
+	else {
+		this->maxhp = maxhp;
+	}
+	
 }
 
 

@@ -10,10 +10,10 @@ private:
 public:
 	Objekt(int id);
 	virtual ~Objekt() {};
-	double getX()const;
-	double getY()const;
-	void setX(double  x) ;
-	void setY(double  y) ;
-	double getID()const;
+	double GetX()const;
+	double GetY()const;
+	void SetX(double  x) ;
+	void SetY(double  y) ;
+	double GetID()const;
 };
 #endif

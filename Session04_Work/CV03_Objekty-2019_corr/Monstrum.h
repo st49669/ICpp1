@@ -1,6 +1,7 @@
 #ifndef _MONSTRUM_H
 #define _MONSTRUM_H
 
+
 #include "PohyblivyObjekt.h"
 class Monstrum :
 	public PohyblivyObjekt

@@ -9,28 +9,28 @@ Objekt::Objekt(int id)
 }
 
 
-double Objekt::getX() const
+double Objekt::GetX() const
 {
 	return x;
 }
 
-double Objekt::getY() const
+double Objekt::GetY() const
 {
 	return y;
 }
 
-void Objekt::setX(double x) 
+void Objekt::SetX(double x) 
 {
 	this->x = x;
 
 }
 
-void Objekt::setY(double  y)
+void Objekt::SetY(double  y)
 {
 	this->y = y;
 }
 
-double Objekt::getID() const
+double Objekt::GetID() const
 {
 	return id;
 }
