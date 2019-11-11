@@ -12,4 +12,4 @@ public:
 	virtual string ToString() const;
 };
 
-#endif;
+#endif

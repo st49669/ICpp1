@@ -1,0 +1,3 @@
+﻿  CV4_st49669_samostPrace.cpp
+c:\users\admin\documents\github\icpp1\session04_work\cv4_st49669_samostprace\cv4_st49669_samostprace.cpp(46): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  CV4_st49669_samostPrace.vcxproj -> C:\Users\Admin\Documents\GitHub\ICpp1\Session04_Work\x64\Debug\CV4_st49669_samostPrace.exe

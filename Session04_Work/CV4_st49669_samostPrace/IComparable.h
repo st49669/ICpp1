@@ -8,12 +8,12 @@
 #include <iostream>
 #include <string>
 
-class IComparable : IObject
+class IComparable : public IObject
 {
 public:
-	virtual int compareTo(IComparable* obj) const;
+	virtual int CompareTo(IComparable* obj) const = 0;
 	virtual string ToString() const;
 };
 
-#endif;
+#endif
 
