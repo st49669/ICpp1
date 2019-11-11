@@ -38,12 +38,6 @@
     <ClCompile Include="CV4_st49669_samostPrace.cpp">
       <Filter>Zdrojové soubory</Filter>
     </ClCompile>
-    <ClCompile Include="IObject.cpp">
-      <Filter>Zdrojové soubory</Filter>
-    </ClCompile>
-    <ClCompile Include="IComparable.cpp">
-      <Filter>Zdrojové soubory</Filter>
-    </ClCompile>
     <ClCompile Include="Cas.cpp">
       <Filter>Zdrojové soubory</Filter>
     </ClCompile>

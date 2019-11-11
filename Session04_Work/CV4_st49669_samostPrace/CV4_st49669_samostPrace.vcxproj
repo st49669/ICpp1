@@ -156,8 +156,6 @@
   <ItemGroup>
     <ClCompile Include="Cas.cpp" />
     <ClCompile Include="CV4_st49669_samostPrace.cpp" />
-    <ClCompile Include="IComparable.cpp" />
-    <ClCompile Include="IObject.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

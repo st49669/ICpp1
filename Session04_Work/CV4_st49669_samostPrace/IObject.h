@@ -9,7 +9,7 @@ using namespace std;
 class IObject
 {
 public:
-	virtual string ToString() const;
+	virtual string ToString() const = 0;
 };
 
 #endif
