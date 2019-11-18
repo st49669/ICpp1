@@ -8,9 +8,10 @@
 struct Datum
 {
 private:
-	int den, mesic, rok;
+	int _den, _mesic, _rok;
 public:
 	Datum(int den, int mesic, int rok);
+	Datum() {};
 	friend std::ostream &operator<<(std::ostream& os, Datum& datum);
 	friend std::istream &operator>>(std::istream& is, Datum& datum);
 };

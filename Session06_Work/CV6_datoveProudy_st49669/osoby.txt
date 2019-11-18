@@ -1,0 +1,5 @@
+Jan0 Novy0 Dlouha0 Mesto0 50000 1 2 1990 
+Jan1 Novy1 Dlouha1 Mesto1 50001 2 3 1991 
+Jan2 Novy2 Dlouha2 Mesto2 50002 3 4 1992 
+Jan3 Novy3 Dlouha3 Mesto3 50003 4 5 1993 
+Jan4 Novy4 Dlouha4 Mesto4 50004 5 6 1994 
