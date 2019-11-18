@@ -3,3 +3,6 @@ Jan1 Novy1 Dlouha1 Mesto1 50001 2 3 1991
 Jan2 Novy2 Dlouha2 Mesto2 50002 3 4 1992 
 Jan3 Novy3 Dlouha3 Mesto3 50003 4 5 1993 
 Jan4 Novy4 Dlouha4 Mesto4 50004 5 6 1994 
+Jan5 Novy5 Dlouha5 Mesto5 50005 6 7 1995 
+Jan6 Novy6 Dlouha6 Mesto6 50006 7 8 1996 
+Jan7 Novy7 Dlouha7 Mesto7 50007 8 9 1997 

@@ -43,18 +43,13 @@ std::istream & operator>>(std::istream & inp, Osoba & osoba)
 	inp >> mesic;
 	inp >> rok;
 
-	cout << jmeno <<" "<< prijmeni << " " << ulice << " " << mesto << " " <<
-		psc << " " << den << " " << mesic << " " << rok <<endl;
+	//cout << jmeno <<" "<< prijmeni << " " << ulice << " " << mesto << " " <<
+		//psc << " " << den << " " << mesic << " " << rok <<endl;
 
-	/*Adresa *adr = new Adresa(ulice, mesto, psc);
-	Datum *dat = new Datum(den, mesic, rok);
-
-	Osoba *os = new Osoba(jmeno, prijmeni, *adr,* dat);
-
-	osoba = *os;
-	delete os;
-	delete adr;
-	delete dat;*/
+	osoba._jmeno = jmeno;
+	osoba._prijmeni = prijmeni;
+	osoba._datumNarozeni = Datum(den, mesic, rok);
+	osoba._trvaleBydliste = Adresa(ulice, mesto, psc);
 
 	return inp;
 }
