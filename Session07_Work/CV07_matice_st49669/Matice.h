@@ -17,7 +17,7 @@ public:
 	void Nastav(int radek, int sloupec, T hodnota);
 	void NastavZ(T* pole);
 	T& Dej(int radek, int sloupec);
-	T& Dej(int radek, int sloupec) const;
+	const T& Dej(int radek, int sloupec) const;
 
 	Matice Transpozice() const;
 	Matice Soucin(const Matice& m) const;
@@ -109,7 +109,7 @@ T& Matice<T>::Dej(int radek, int sloupec) {
 
 
 template<typename T>
-T& Matice<T>::Dej(int radek, int sloupec) const {
+const T& Matice<T>::Dej(int radek, int sloupec) const {
 	if (radek < 0 || sloupec < 0 || radek >= radky || sloupec >= sloupce) {
 		throw new std::out_of_range("Prvek v matici na tomto indexu neexistuje.");
 	}
